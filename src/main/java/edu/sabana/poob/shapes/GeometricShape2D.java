@@ -25,4 +25,6 @@ public interface GeometricShape2D {
                 , this.getArea()
                 , this.getPerimeter());
     }
+
+
 }

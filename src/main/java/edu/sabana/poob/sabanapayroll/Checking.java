@@ -1,10 +1,14 @@
 package edu.sabana.poob.sabanapayroll;
 
+import java.time.LocalDate;
+
 public class Checking extends BankAccount {
+
+    public final static double DEPOSIT_DISCOUNT = 5000;
 
     @Override
     public double getDepositDiscount() {
-        return 0;
+        return DEPOSIT_DISCOUNT;
     }
 
     /**
@@ -12,8 +16,19 @@ public class Checking extends BankAccount {
      * <br><br>
      * @return el porcentaje depositado en la cuenta.
      */
+
     public boolean processCheck(Check check){
-        return false;
+        boolean result = false;
+        double newBalance;
+        LocalDate currentDate = LocalDate.now();
+        if(currentDate.isBefore(check.getExpirationDate())){
+            if(check.getAmount() > getDepositDiscount()){
+                newBalance = check.getAmount() - getDepositDiscount();
+                balance += newBalance;
+                result = true;
+            }
+        }
+        return result;
     }
 
 }

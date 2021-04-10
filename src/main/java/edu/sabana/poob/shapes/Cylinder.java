@@ -4,9 +4,10 @@ public class Cylinder extends Circle implements GeometricShape3D {
 
     private double height;
 
+
     public Cylinder() {
         super();
-        this.height = 1;
+        this.height =1.0;
     }
 
     public Cylinder(double radius, double height) {
@@ -21,11 +22,29 @@ public class Cylinder extends Circle implements GeometricShape3D {
 
     @Override
     public double getVolume() {
-        return 0;
+        double volume= PI*radius*radius*height;
+        return  volume;
+    }
+    @Override
+    public double getPerimeter () {
+        double perimeter = 2 * PI * radius;
+        return perimeter;
+    }
+    @Override
+    public double getSuperficialArea() {
+        double area= 2*PI*radius*height+2*PI*radius*radius;
+        System.out.println(area);
+        return  area;
     }
 
     @Override
-    public double getSuperficialArea() {
-        return 0;
+    public String toStringGeometricShape2D() {
+        return super.toString()+"This is a Cylinder";
+
+    }
+    @Override
+    public String toStringGeometricShape3D() {
+        return super.toString()+"This is a Cylinder";
+
     }
 }
