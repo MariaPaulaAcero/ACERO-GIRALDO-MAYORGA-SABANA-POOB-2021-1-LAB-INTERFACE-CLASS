@@ -1,20 +1,19 @@
 # PARTE 1
-## ¿Cuál es la relación entre Circle y Shape?
-Circle es la clase hija de shape, en su defecto la subclase de shape o circle hereda de shape, de igual forma circle hereda dos métodos: +():Shape  +():Circle  y +(Color):Shape  +(Color)
+## ¿Cuál es la relación entre Circle y Shape? 
 
-La relación que existe esta en el atributo color y tostring
+Circle es la clase hija de shape, por lo tanto circle hereda de shape, ya que el método que hereda es el del color.
 
-## ¿Cuál es la relación entre Cylinder y Shape?
-Es la subclase de Circle y de ahí la subclase de Shape, también se podría decir que Cylinder hereda de Circle y Circle hereda de Shape, de igual forma Cylinder hereda un método de shape: +():Shape  +():Cylinder
+## ¿Cuál es la relación entre Cylinder y Shape? 
 
-La relación que existe esta en el atributo color
+Es la subclase de Circle y de ahí la subclase de Shape, también se podría decir que Cylinder hereda de Circle y Circle hereda de Shape, ya que el método que hereda es el del color y radio.
 
 ## ¿Cuál es la relación entre Circle y GeometricShape2D?
-Circle es una interfaz de GeometricShape2D
 
-La relación que existe esta en el tostring comportamiento atributos del area y perímetro 
-## ¿Cuál es la relación entre Cylinder y GeometricShape3D?
-Cylinder es una interfaz de GeometricShape3D
+Circle es una interfaz de GeometricShape2D, con los atributos de Circle se pueden llevar acabo los métodos de encontrar área y perímetro en GeometricShape2D.
+
+## ¿Cuál es la relación entre Cylinder y GeometricShape3D? 
+
+Cylinder es una interfaz de GeometricShape3D, con los atributos de Cylinder se pueden llevar a cabo los métodos de encontrar volumen y área superficial de GeometricShape3D.
 
 ## EVIDENCIAS DE LAS PRUEBAS
 
@@ -38,14 +37,18 @@ Evidencias del RectangleTest
 ## Implementando GeometricShape3D
 
 Evidencias del RectangleSolidTest
-![img_5.png](img_5.png)
+![img_7.png](img_7.png)
 
 Evidencias del PyramidTest
-
+![img_10.png](img_10.png)
 
 
 ##CUBE
 Evidencias del CubeTest
 
 ![img_6.png](img_6.png)
+
+# PARTE 3
+
+![img_8.png](img_8.png)
 

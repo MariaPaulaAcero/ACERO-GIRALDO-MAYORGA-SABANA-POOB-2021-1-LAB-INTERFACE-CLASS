@@ -2,7 +2,7 @@ package edu.sabana.poob.shapes;
 
 public class Triangle extends Shape implements GeometricShape2D {
 
-    private double side1;
+    double side1;
     private double side2;
     private double side3;
 

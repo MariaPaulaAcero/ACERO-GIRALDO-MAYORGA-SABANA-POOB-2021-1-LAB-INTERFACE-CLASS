@@ -14,25 +14,32 @@ public class Pyramid extends Triangle implements GeometricShape3D{
         this.height = height;
     }
 
-    public Pyramid(double side1,double side2, double side3,String color, double height) {
+    public Pyramid(double side1,double side2, double side3, double height,String color) {
         super(color,side1,side2,side3);
         this.height = height;
     }
     public double getPerimeter (){
-        return 0;
+        double perimeter=side1*4;
+        return perimeter ;
     }
-
+    public double getArea (){
+        double areaBase= side1*side1;
+        return areaBase;
+    }
 
     @Override
     public double getVolume() {
-        double volume = 1/3*getSuperficialArea()*this.height;
+        //double volume = 1/3*getSuperficialArea()*this.height;
+        double areaBase= side1*side1;
+        double volume = (areaBase*this.height)/3;
         return volume;
     }
     @Override
     public double getSuperficialArea(){
-        double aereaBase=height*height;
-        double superFicialArea=aereaBase+getArea();
-        return superFicialArea;
+        double areaBase=side1*side1;
+        double superFicialArea=areaBase+getArea();
+        double areaTotal= superFicialArea*getPerimeter()/2;
+        return areaTotal;
     }
 
     @Override

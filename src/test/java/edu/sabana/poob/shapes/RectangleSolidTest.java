@@ -35,6 +35,13 @@ public class RectangleSolidTest {
         assertEquals(754, (int) r3.getVolume());
 
     }
+    @Test
+    public void shouldCalculateSuperficialArea() {
+        assertEquals(4, (int) r1.getSuperficialArea());
+        assertEquals(1000, (int) r2.getSuperficialArea());
+        assertEquals(2400, (int) r3.getSuperficialArea());
+
+    }
 
     @Test
     public void shouldCalculatePerimeter() {
@@ -48,8 +55,6 @@ public class RectangleSolidTest {
         assertEquals(1, (int) r1.getDiagonal());
         assertEquals(5, (int) r2.getDiagonal());
         assertEquals(7, (int) r3.getDiagonal());
-
-
     }
 
     @Test
