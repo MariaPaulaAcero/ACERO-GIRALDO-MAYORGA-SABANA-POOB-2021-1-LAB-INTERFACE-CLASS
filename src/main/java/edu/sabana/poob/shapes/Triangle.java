@@ -61,5 +61,9 @@ public class Triangle extends Shape implements GeometricShape2D {
     public String toString (){
         return super.toString() + " side1 " + side1 + " side2 " + side2 + " and side3 " + side3;
     }
+    @Override
+    public String toStringGeometricShape2D() {
+        return super.toString()+"This is a Triangle";
+    }
 
 }
