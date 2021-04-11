@@ -18,7 +18,7 @@ public class RectangleSolidTest {
         r1 = new RectangleSolid();
         r2 = new RectangleSolid(14.5,20.0,24.0);
         r3 = new RectangleSolid(24.0,26.0,"blue",28.0);
-        r4 = new RectangleSolid(3.0,1.0,4.0);
+        r4 = new RectangleSolid("Red");
     }
 
     @Test
@@ -26,7 +26,13 @@ public class RectangleSolidTest {
         assertEquals(1, (int) r1.getArea());
         assertEquals(290, (int) r2.getArea());
         assertEquals(624, (int) r3.getArea());
-        assertEquals(3, (int) r4.getArea());
+
+    }
+    @Test
+    public void shouldCalculateVolume() {
+        assertEquals(2, (int) r1.getVolume());
+        assertEquals(500, (int) r2.getVolume());
+        assertEquals(754, (int) r3.getVolume());
 
     }
 
@@ -36,14 +42,13 @@ public class RectangleSolidTest {
         assertEquals(4, (int) r1.getPerimeter());
         assertEquals(69, (int) r2.getPerimeter());
         assertEquals(100, (int) r3.getPerimeter());
-        assertEquals(8, (int) r4.getPerimeter());
     }
     @Test
     public void shouldCalculateDiagonal() {
         assertEquals(1, (int) r1.getDiagonal());
         assertEquals(5, (int) r2.getDiagonal());
         assertEquals(7, (int) r3.getDiagonal());
-        assertEquals(2, (int) r4.getDiagonal());
+
 
     }
 
@@ -53,7 +58,7 @@ public class RectangleSolidTest {
         assertEquals("This is a RectangleSolid with color NONE and width 1.0 and lenght 1.0", r1.toString());
         assertEquals("This is a RectangleSolid with color NONE and width 14.5 and lenght 20.0", r2.toString());
         assertEquals("This is a RectangleSolid with color blue and width 24.0 and lenght 26.0", r3.toString());
-        assertEquals("This is a RectangleSolid with color NONE and width 3.0 and lenght 1.0", r4.toString());
+        assertEquals("This is a RectangleSolid with color Red and width 0.0 and lenght 0.0", r4.toString());
     }
     @Test
     public void shouldPrintRectangleSolid3D() {

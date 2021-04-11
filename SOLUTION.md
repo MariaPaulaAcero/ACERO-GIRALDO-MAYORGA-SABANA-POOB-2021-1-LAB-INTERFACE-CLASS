@@ -38,6 +38,14 @@ Evidencias del RectangleTest
 ## Implementando GeometricShape3D
 
 Evidencias del RectangleSolidTest
-![img_4.png](img_4.png)
+![img_5.png](img_5.png)
 
 Evidencias del PyramidTest
+
+
+
+##CUBE
+Evidencias del CubeTest
+
+![img_6.png](img_6.png)
+

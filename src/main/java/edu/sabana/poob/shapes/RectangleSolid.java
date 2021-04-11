@@ -22,7 +22,6 @@ public class RectangleSolid extends Rectangle implements GeometricShape3D{
     @Override
     public double getVolume() {
         double volume = this.depth*getLenght()+getLenght();
-        System.out.println(volume);
         return volume;
     }
     @Override

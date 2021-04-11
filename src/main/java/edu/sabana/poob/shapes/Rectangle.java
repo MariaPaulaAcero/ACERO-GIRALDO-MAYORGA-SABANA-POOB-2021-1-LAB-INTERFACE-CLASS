@@ -45,6 +45,7 @@ public class Rectangle extends  Shape implements GeometricShape2D {
         return area;
     }
 
+
     @Override
     public double getPerimeter() {
         double perimeter = 2 * (this.width + this.lenght);
