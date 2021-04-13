@@ -58,10 +58,10 @@ public class RectangleTest {
     }
     @Test
     public void shouldPrintRectangle2D() {
-        assertTrue(r1.toStringGeometricShape2D().contains("This is a Triangle"));
-        assertTrue(r2.toStringGeometricShape2D().contains("This is a Triangle"));
-        assertTrue(r3.toStringGeometricShape2D().contains("This is a Triangle"));
-        assertTrue(r4.toStringGeometricShape2D().contains("This is a Triangle"));
+        assertTrue(r1.toStringGeometricShape2D().contains("This is a Rectangle"));
+        assertTrue(r2.toStringGeometricShape2D().contains("This is a Rectangle"));
+        assertTrue(r3.toStringGeometricShape2D().contains("This is a Rectangle"));
+        assertTrue(r4.toStringGeometricShape2D().contains("This is a Rectangle"));
         }
 
 
