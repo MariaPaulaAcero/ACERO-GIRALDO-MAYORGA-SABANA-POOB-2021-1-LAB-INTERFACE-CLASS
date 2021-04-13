@@ -26,7 +26,6 @@ public class Rectangle extends  Shape implements GeometricShape2D {
     public double getWidth() {
         return width;
     }
-
     public double getLenght() {
         return lenght;
     }

@@ -45,6 +45,9 @@ public class Cube extends RectangleSolid{
         double superficialArea=side1*6;
         return superficialArea;
     }
+    public String toString (){
+        return super.toString() + " side1 " + side1;
+    }
 
 //NO PUSE EL TOSTRING
 

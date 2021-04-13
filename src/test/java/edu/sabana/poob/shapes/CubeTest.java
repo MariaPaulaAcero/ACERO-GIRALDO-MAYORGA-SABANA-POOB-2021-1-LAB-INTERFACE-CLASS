@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CubeTest {
 
@@ -44,14 +45,14 @@ public class CubeTest {
         assertEquals(0, (int) c4.getPerimeter());
     }
 
-   /* @Test
+   /*@Test
     public void shouldPrintCube() {
 
 
-        assertEquals("This is a Cube with color NONE and width 1.0 and lenght 1.0", c1.toString());
-        assertEquals("This is a Cube with color NONE and width 20.0 and lenght 20.0", c2.toString());
-        assertEquals("This is a Cube with color Black and width 25.0 and lenght 25.0", c3.toString());
-        assertEquals("This is a Cube with color Red and width 0.0 and lenght 0.0", c4.toString());
+        assertEquals("This is a Cube with color NONE and width 1.0 and lenght 1.0 side1 1.0", c1.toString());
+        assertEquals("This is a Cube with color Black and width 0.0 and lenght 0.0 side1 20.0", c2.toString());
+        assertEquals("This is a Cube with color NONE and width 1.0 and lenght 1.0 side1 25.0", c3.toString());
+        assertEquals("This is a Cube with color Red and width 0.0 and lenght 0.0 side1 0.0", c4.toString());
     }
 
     */
