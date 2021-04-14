@@ -34,9 +34,9 @@ public class PyramidTest {
     }
     @Test
     public void shouldCalculateSuperficialArea() {
-        assertEquals(4, (int) p1.getSuperficialArea());
-        assertEquals(10976, (int) p2.getSuperficialArea());
-        assertEquals(6912, (int) p3.getSuperficialArea());
+        assertEquals(9, (int) p1.getSuperficialArea());
+        assertEquals(2436, (int) p2.getSuperficialArea());
+        assertEquals(1584, (int) p3.getSuperficialArea());
     }
 
     @Test
