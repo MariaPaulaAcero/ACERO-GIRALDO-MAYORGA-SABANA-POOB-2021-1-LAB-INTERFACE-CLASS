@@ -52,3 +52,7 @@ Evidencias del CubeTest
 
 ![img_8.png](img_8.png)
 
+
+
+# PARTE 6
+![img_11.png](img_11.png)
