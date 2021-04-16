@@ -21,4 +21,15 @@ public class EmployeeBySalary extends Employee {
     public String toString() {
         return super.toString() + " payment by salary.";
     }
+
+    @Override
+    public boolean assignFamilyCompensation(IFamilyCompensationFund familyCompensationFund){
+        boolean result = false;
+        if(familyCompensationFund != null){
+            this.familyCompensationFund = familyCompensationFund;
+            result = true;
+        }
+        return result;
+    }
+
 }

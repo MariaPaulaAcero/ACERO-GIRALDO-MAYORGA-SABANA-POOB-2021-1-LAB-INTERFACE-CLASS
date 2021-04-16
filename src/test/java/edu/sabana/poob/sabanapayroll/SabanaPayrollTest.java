@@ -55,4 +55,12 @@ public class SabanaPayrollTest {
         boolean result = sabanaPayroll.assigneFamilyCompensation(CompensarFund.class.getSimpleName(), employeeBySalary.getId());
         assertTrue(result);
     }
+
+    @Test
+    public void assigneCafamFamilyCompensation() {
+
+        boolean result = sabanaPayroll.assigneFamilyCompensation(CafamFund.class.getSimpleName(), employeeBySalary.getId());
+        assertTrue(result);
+    }
+
 }

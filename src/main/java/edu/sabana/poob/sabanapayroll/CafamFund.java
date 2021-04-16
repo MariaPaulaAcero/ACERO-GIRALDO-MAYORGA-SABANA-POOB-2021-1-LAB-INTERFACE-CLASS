@@ -1,17 +1,16 @@
 package edu.sabana.poob.sabanapayroll;
-
 import java.util.*;
 
-public class CompensarFund implements IFamilyCompensationFund{
+public class CafamFund implements IFamilyCompensationFund{
 
-    private static List<Employee> registeredEmployees = new ArrayList<>();
+    private static Set<Employee> registeredEmployees = new HashSet<>();
 
-    public CompensarFund() {
+    public CafamFund() {
 
     }
 
     /**
-     * No permite registrar empleados de tipo EmployeeByHours.
+     * Permite registrar cualquier empleado.
      *
      * @param employee
      * @return
@@ -20,11 +19,8 @@ public class CompensarFund implements IFamilyCompensationFund{
     public boolean registerEmployee(Employee employee) {
         boolean result = false;
 
-        if(employee instanceof EmployeeByCommission || employee instanceof EmployeeBySalary){
-            if(!registeredEmployees.contains(employee)){
-                registeredEmployees.add(employee);
-                result = true;
-            }
+        if(registeredEmployees.add(employee)){
+            result = true;
         }else {
             result = false;
         }
@@ -35,14 +31,15 @@ public class CompensarFund implements IFamilyCompensationFund{
     @Override
     public boolean deleteEmployee(UUID id) {
         boolean result = false;
-        Iterator<Employee> it = registeredEmployees.iterator();
-        while(it.hasNext()){
-            UUID employee_id = it.next().getId();
-            if(employee_id.equals(id)){
-                it.remove();
+        for(Employee e: registeredEmployees){
+            if(id.equals(e.getId())){
+                registeredEmployees.remove(e);
                 result = true;
+            }else {
+                result = false;
             }
         }
+
         return result;
     }
 
@@ -62,6 +59,6 @@ public class CompensarFund implements IFamilyCompensationFund{
 
     @Override
     public String printBenefits() {
-        return "Los beneficios de esta caja de compensación son:\nBeneficioD...\nBeneficioE...\nBeneficioF...";
+        return "Los beneficios de esta caja de compensación son:\nBeneficioG...\nBeneficioH...\nBeneficioI...";
     }
 }
