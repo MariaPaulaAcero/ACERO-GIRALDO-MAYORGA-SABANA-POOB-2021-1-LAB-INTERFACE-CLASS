@@ -1,4 +1,5 @@
 package edu.sabana.poob.sabanapayroll;
+
 import java.util.*;
 
 public class CafamFund implements IFamilyCompensationFund{

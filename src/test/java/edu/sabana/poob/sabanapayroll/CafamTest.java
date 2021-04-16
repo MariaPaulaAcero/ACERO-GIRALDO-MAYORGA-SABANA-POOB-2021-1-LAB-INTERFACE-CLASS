@@ -23,6 +23,7 @@ public class CafamTest {
     private static EmployeeByCommission employeeByCommission;
     private static EmployeeByHours employeeByHours2;
 
+
     private static IFamilyCompensationFund cafamFund;
 
     @BeforeAll
@@ -40,6 +41,9 @@ public class CafamTest {
         employees.add(employeeBySalary);
         employees.add(employeeByHours);
         employees.add(employeeByCommission);
+        employees.add(employeeByHours2);
+
+
 
         cafamFund = new CafamFund();
     }
@@ -85,8 +89,9 @@ public class CafamTest {
     @DisplayName("GIVEN a employee by salary registered WHEN try to validate is registered THEN success")
     public void shouldValidateEmployeeIsRegistered() {
 
+
         assertTrue(cafamFund.registerEmployee(employeeByHours));
-        assertTrue(cafamFund.isEmployeeRegistered(employeeByHours.getId()));
+        assertFalse(cafamFund.isEmployeeRegistered(employeeByHours.getId()));
     }
 
     @Test

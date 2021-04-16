@@ -15,4 +15,8 @@ public class Department {
     public String getName() {
         return name;
     }
+
+    public double calculateDepartmentSalaries() {
+        return 0;
+    }
 }
